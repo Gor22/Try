@@ -1,0 +1,167 @@
+.header{
+    width: 100%;
+    background-color: var(--color-white);
+}
+.blockMenu{
+    display: flex;
+    flex-direction: row;
+
+}
+.blockMenu__link{
+    padding: 10px 5px;
+    font-size: 18px;
+}
+.wrepperTop{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.MainText__logo,
+.logo__words{
+    font-family: 'Miss Fajardose', cursive;
+    /*font-size: 72px;*/
+    font-size: calc(100vw*0.037);
+}
+.MainText__logo{
+
+    /*margin-top: 100px;*/
+    /*font-size: 180px;*/
+    margin-top: calc(100vw*0.03);
+    font-size: calc(100vw*0.09);
+    font-weight: normal;
+    color: var(--color-white);
+}
+.MainText__title,
+.MainText__Subtitle{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: var( --color-sand);
+    font-size: 40px;
+}
+.wrapperMainText{
+    margin: 0 auto;
+    width: 80%;
+}
+.wrepperMainInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contactInform{
+    display: flex;
+    flex-direction: row;
+    
+}
+.phones{
+    margin-left: 20px;
+}
+.MainText__text{
+    font-size:24px;
+    color: var(--color-white);
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 400px;
+    margin-top: 40px;
+
+}
+
+
+/*соц.сети*/
+.social{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.social__item{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-white);
+}
+.social__itemLink{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.social__itemLink>.fa{
+    color: var(--color-white);
+}
+.closeTopMenu{
+    display: none;
+}
+.buttonOpenGamburgerMenu{
+    display: none;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 700px){
+    .wrepperTop{
+        width: 100%;
+    }
+    .buttonOpenGamburgerMenu{
+        display: block;
+        border: none;
+        background-color: var(--color-white);
+       
+    }
+    .buttonOpenGamburgerMenu>.fa{
+        color: var(--color-black);
+        font-size: 20px;
+        paddind: 10px;
+        display: block;
+        cursor: pointer;
+    }
+    .buttonOpenGamburgerMenu:focus,
+    .buttonOpenGamburgerMenu:hover{
+       outline: none;
+       border: none; 
+    }
+    
+    
+    .closeTopMenu{
+        display: block;
+    }
+    .blockMenu {
+        display: flex;
+
+        height:100vh;
+       
+        
+        
+        flex-direction: column;
+        position: fixed;
+        transform: translateX(-120%);
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        transition: 0.8s;
+        width: 100%;
+        z-index: 10;
+        
+        
+        
+    }
+    .closeTopMenu>.fa,
+    .blockMenu__link{
+        padding: 10px;
+        font-size: 20px;
+        display: block;
+        cursor: pointer;
+    }
+    .openHamburger{
+        transform: translateX(0);
+    }
+    .hidScroll{
+        overflow: hidden;
+    }
+    .wrepperMainInfo{
+        width: 90%;
+        margin: 5px auto;
+    }
+}

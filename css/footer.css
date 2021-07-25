@@ -1,0 +1,95 @@
+.footer{
+    background-image: url('../images/BgFooter.png');
+    width: 100%;
+    height: 400px;
+    display: block;
+    margin-top: 40px;
+}
+.innerWrepper__footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 50px 0;
+}
+
+
+.logo__footer
+.logoFooter__words{
+    color: var(--color-white);
+    font-family: 'Miss Fajardose', cursive;
+    font-size: calc(100vw*0.04)
+}
+ 
+
+
+.phones__footer{
+    display: flex;
+    flex-direction: column;
+}
+.phonesFooter__item{}
+.phonesFooter__itemHref{}
+.phonesFooter__itemTitle{
+    color: var(--color-white);
+}                        
+.phonesFooter__itemNum{
+    /*color: var(--color-white);*/
+    color: #adabab;
+}               
+                    
+                    
+.schedule__footer{}                    
+.scheduleFooter__item{
+    
+}               
+ .scheduleFooter__content{
+     color: var(--color-white);
+ }               
+                   
+  
+
+ 
+ 
+ 
+                   
+/*соц.сети*/
+.social__footer{
+   
+    display: flex;
+    flex-direction: row;
+}
+.socialFooter__item{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-white);
+}
+.socialFooter__itemLink{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.socialFooter__itemLink>.fa{
+    color: var(--color-white);
+} 
+.subFooter{
+    border-top: 1px solid #fff;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0; 
+}
+.subFooter>p{
+    color: var(--color-white);
+}
+.socialFooter__itemLink:hover{
+   background-color: #fff;
+    
+}
+.socialFooter__itemLink:hover.socialFooter__itemLink>.fa{
+    color: var(--color-black);
+} 

@@ -1,0 +1,51 @@
+.works{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    
+    
+    
+    
+}
+.works__item{
+    overflow: hidden;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.works__photo{
+    width: 100%;
+}
+.works__photoTitle{
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: -150%;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    transition: 0.8s;
+    font-size: 20px;
+    padding: 5px;
+    
+}
+
+.works__item:hover .works__photoTitle{
+    left: 0%;
+    
+}
+
+
+
+.works__item{
+    position:relative;
+    
+}
+.works__photo{
+      position: absolute;
+      top: 0;
+      left:0;
+}
+
+.works__photo:hover{
+      width: 110%;
+}

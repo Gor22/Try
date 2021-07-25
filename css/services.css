@@ -1,0 +1,45 @@
+.innerWrepper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin: 50px auto;
+}
+.services__item{
+    box-shadow: 0px 8px 20px #70685D;
+    transition: .5s;
+    overflow: hidden;
+}
+.services__photo>img{
+    width: 100%;
+}
+.services__textWrepper{
+    display: block;
+    padding: 20px 20px 40px;
+}
+.services__textDescription{
+    display: block;
+    margin-top: 10px;
+}
+.services__item:hover{
+    box-shadow: 0px 10px 30px rgba(39, 38, 35, 0.88);
+}
+.services__photo{
+    overflow: hidden;
+    display: block
+}
+.services__item:hover .services__photo>img{
+    transform: scale(1.2);  
+}
+.textAboutUS>.titleBlockWhite{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 25px;   
+}

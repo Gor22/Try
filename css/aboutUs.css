@@ -1,0 +1,92 @@
+.aboutUs{
+    background-image: url('../images/bgUS.jpg');
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+  
+   
+
+
+
+}
+.aboutUs:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: var(--color-black);
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+
+}
+
+.titleBlockWhite{
+    color: var(--color-white);
+}
+.wrepperPhotoPerson{
+    width: 320px;
+    flex-basis: 40%;
+    flex-grow: 1;
+
+}
+.photoPerson{
+    display: block;
+    width: 60%;
+}
+.innerWrepper__aboutUs{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    top: 10%;
+    left: 0;
+    z-index: 2;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   /* align-items: flex-start;*/
+   flex-wrap: wrap;
+
+}
+.textAboutUS{
+    flex-basis: 40%;
+    flex-grow: 1;
+}
+.textAboutUS>*{
+    color: var(--color-white);
+    font-size: 24px;
+}
+
+@media screen and (max-width: 500px){
+    .innerWrepper__aboutUs{
+        
+    }
+    .textAboutUS>.titleBlockWhite,
+    .textAboutUS>.textAboutUS__text{
+        font-size: 18px;
+        
+    }
+    
+}
+@media screen and (max-width: 700px){
+    .innerWrepper__aboutUs{
+        flex-direction: column;
+    }
+    .textAboutUS>.titleBlockWhite,
+    .textAboutUS>.textAboutUS__text{
+        font-size: 18px;
+        
+    }
+    
+}
